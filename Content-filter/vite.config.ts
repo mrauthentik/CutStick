@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import crx from 'vite-plugin-web-extension'
+import path from 'path'
 
 export default defineConfig({
   plugins: [
@@ -26,12 +27,17 @@ export default defineConfig({
       })
     })
   ],
-  build: {
+   build: {
     rollupOptions: {
       input: {
-        popup: 'index.html',
-        options: 'options.html'
+        popup: path.resolve(__dirname, 'index.html'),
+        options: path.resolve(__dirname, 'options.html')
       }
+    }
+  },
+  resolve:{
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
     }
   }
 })
