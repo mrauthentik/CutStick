@@ -1,5 +1,4 @@
 import {TextFilter} from '../lib/textFilter';
-import {ImageFilter} from './image-filter';
 
 // i initailaize filters here
 
@@ -12,7 +11,7 @@ function filterPageContent() {
         document.body,
         NodeFilter.SHOW_TEXT,
         null,
-        false
+        
     )
 
     let node
