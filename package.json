@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "@types/chrome": "^0.0.323",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
